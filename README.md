@@ -11,6 +11,18 @@ Summary: RQ is a simple, lightweight, library for creating background jobs, and 
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/rq-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rq-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/rq-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/rq-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/rq-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/rq-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rq/badges/version.svg)](https://anaconda.org/conda-forge/rq)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rq/badges/downloads.svg)](https://anaconda.org/conda-forge/rq)
+
 Installing rq
 =============
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `rq` available on your platform wi
 ```
 conda search rq --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/rq-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rq-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/rq-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/rq-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/rq-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/rq-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rq/badges/version.svg)](https://anaconda.org/conda-forge/rq)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rq/badges/downloads.svg)](https://anaconda.org/conda-forge/rq)
 
 
 Updating rq-feedstock
