@@ -1,19 +1,18 @@
 {% set name = "rq" %}
-{% set version = "0.8.1" %}
-{% set build = 0 %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version}}.tar.gz
   url: https://github.com/nvie/rq/archive/v{{ version }}.tar.gz
-  sha256: 4fda4f7d0bd1356a45b8fcf5b1ef89ca76451ca2b93d294de9e722b3ea28be90
+  sha256: 71fb6a14354013106655efd3eccd028fcea81f1dab0aaf14ecb26ec15ebd4bfc
 
 build:
-  number: {{ build }}
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed .
   entry_points:
     - rq = rq.cli:main
     - rqinfo = rq.cli:info
@@ -22,7 +21,7 @@ build:
 requirements:
   build:
     - python
-    - setuptools
+    - pip
     - redis-py >=2.7.0
     - click >=3.0
 
@@ -46,6 +45,8 @@ test:
 about:
   home: https://github.com/nvie/rq/
   license: BSD 2-Clause
+  license_file: LICENSE
+  license_family: BSD
   summary: 'RQ is a simple, lightweight, library for creating background jobs, and processing them.'
 
 extra:
