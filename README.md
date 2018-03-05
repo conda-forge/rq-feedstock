@@ -14,9 +14,7 @@ Summary: RQ is a simple, lightweight, library for creating background jobs, and 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/rq-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rq-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/rq-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/rq-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/rq-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/rq-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/rq-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rq-feedstock)
 
 Current release info
 ====================
