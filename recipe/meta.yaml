@@ -1,5 +1,5 @@
 {% set name = "rq" %}
-{% set version = "0.8.1" %}
+{% set version = "0.10.0" %}
 {% set build = 0 %}
 
 package:
@@ -9,10 +9,10 @@ package:
 source:
   fn: {{ name }}-{{ version}}.tar.gz
   url: https://github.com/nvie/rq/archive/v{{ version }}.tar.gz
-  sha256: 4fda4f7d0bd1356a45b8fcf5b1ef89ca76451ca2b93d294de9e722b3ea28be90
+  sha256: 71fb6a14354013106655efd3eccd028fcea81f1dab0aaf14ecb26ec15ebd4bfc
 
 build:
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - rq = rq.cli:main
