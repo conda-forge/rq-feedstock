@@ -14,12 +14,15 @@ Summary: RQ is a simple, lightweight, library for creating background jobs, and 
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/rq-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/rq-feedstock)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/rq-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/rq-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rq/badges/version.svg)](https://anaconda.org/conda-forge/rq)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/rq/badges/downloads.svg)](https://anaconda.org/conda-forge/rq)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-rq-green.svg)](https://anaconda.org/conda-forge/rq) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rq.svg)](https://anaconda.org/conda-forge/rq) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rq.svg)](https://anaconda.org/conda-forge/rq) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rq.svg)](https://anaconda.org/conda-forge/rq) |
 
 Installing rq
 =============
