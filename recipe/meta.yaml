@@ -1,5 +1,5 @@
 {% set name = "rq" %}
-{% set version = "0.11" %}
+{% set version = "1.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/nvie/rq/archive/v{{ version }}.tar.gz
-  sha256: eadd013206a258dbb91673f54d8ab70eeedf77107dd547ba2af166a970586bc3
+  sha256: aa74372ea0e8ab98077e7b9a690ace0300ca8c9b20bd9c085ee13aa6a2aa4e4c
 
 build:
   noarch: python
