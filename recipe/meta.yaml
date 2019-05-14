@@ -43,7 +43,7 @@ test:
 about:
   home: https://python-rq.org/ 
   license: BSD 2-Clause
-  license_file: LICENSE
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   license_family: BSD
   summary: 'RQ is a simple, lightweight, library for creating background jobs, and processing them.'
   doc_url: https://python-rq.org/docs/
