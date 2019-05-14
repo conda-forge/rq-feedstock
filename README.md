@@ -1,7 +1,7 @@
 About rq
 ========
 
-Home: https://github.com/nvie/rq/
+Home: https://github.com/rq/rq/
 
 Package license: BSD 2-Clause
 

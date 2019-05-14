@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/nvie/rq/archive/v{{ version }}.tar.gz
-  sha256: aa74372ea0e8ab98077e7b9a690ace0300ca8c9b20bd9c085ee13aa6a2aa4e4c
+  url: https://github.com/rq/rq/archive/v{{ version }}.tar.gz
+  sha256: 612347de9529c6d50a97c0c69c4f16b22e100c9d036d92f7273e52b9afd4cc7e
 
 build:
   noarch: python
@@ -22,13 +22,13 @@ requirements:
   build:
     - python
     - pip
-    - redis-py >=2.7.0
+    - redis-py >=3.0
     - click >=3.0
 
   run:
     - python
     - setuptools
-    - redis-py >=2.7.0
+    - redis-py >=3.0
     - click >=3.0
 
 test:
@@ -43,7 +43,7 @@ test:
     - rqworker --help
 
 about:
-  home: https://github.com/nvie/rq/
+  home: https://github.com/rq/rq/
   license: BSD 2-Clause
   license_file: LICENSE
   license_family: BSD
