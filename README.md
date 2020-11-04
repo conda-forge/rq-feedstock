@@ -5,11 +5,13 @@ Home: https://python-rq.org/
 
 Package license: BSD 2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rq-feedstock/blob/master/LICENSE.txt)
 
 Summary: RQ is a simple, lightweight, library for creating background jobs, and processing them.
 
+Development: https://github.com/rq/rq
 
+Documentation: https://python-rq.org/docs/
 
 Current build status
 ====================
@@ -119,4 +121,5 @@ Feedstock Maintainers
 * [@daf](https://github.com/daf/)
 * [@jkornblum](https://github.com/jkornblum/)
 * [@kwilcox](https://github.com/kwilcox/)
+* [@wolfv](https://github.com/wolfv/)
 
