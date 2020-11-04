@@ -1,5 +1,5 @@
 {% set name = "rq" %}
-{% set version = "1.2.2" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,24 +7,24 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 176a1be023e48cf9f5b3a7eb006f20709fcc564d625fe7c8cc4042f929316636
+  sha256: fc23788eedc39cad3c10630af1694a550eba2f8519e57e396fd91b1dba0a7d99
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   entry_points:
     - rq = rq.cli:main
     - rqinfo = rq.cli:info
     - rqworker = rq.cli:worker
 
 requirements:
-  host: 
-    - python
+  host:
+    - python >=3.6
     - pip
 
   run:
-    - python
+    - python >=3.6
     - setuptools
     - redis-py >=3.0.0
     - click >=5.0
@@ -41,11 +41,11 @@ test:
     - rqworker --help
 
 about:
-  home: https://python-rq.org/ 
-  license: BSD 2-Clause
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  home: https://python-rq.org/
+  license: BSD-2-Clause
+  license_file: LICENSE
   license_family: BSD
-  summary: 'RQ is a simple, lightweight, library for creating background jobs, and processing them.'
+  summary: RQ is a simple, lightweight, library for creating background jobs, and processing them.
   doc_url: https://python-rq.org/docs/
   dev_url: https://github.com/rq/rq
 
@@ -54,3 +54,4 @@ extra:
     - kwilcox
     - daf
     - jkornblum
+    - wolfv
