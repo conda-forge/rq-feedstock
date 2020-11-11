@@ -3,7 +3,7 @@ About rq
 
 Home: https://python-rq.org/
 
-Package license: BSD 2-Clause
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/rq-feedstock/blob/master/LICENSE.txt)
 
