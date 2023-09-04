@@ -31,7 +31,6 @@ test:
   imports:
     - rq
     - rq.cli
-    - rq.compat
     - rq.contrib
   commands:
     - rq --help
