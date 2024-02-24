@@ -1,5 +1,5 @@
 {% set name = "rq" %}
-{% set version = "1.15.1" %}
+{% set version = "1.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rq-{{ version }}.tar.gz
-  sha256: 1f49f4ac1a084044bb8e95b3f305c0bf17e55618b08c18e0b60c080f12d6f008
+  sha256: aab9e0fc90d7ffd100241b0f8dd7458c1ee4039edc2bfea9f7e2cfc0567f5710
 
 build:
   number: 0
