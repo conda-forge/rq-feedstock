@@ -6,11 +6,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/rq-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/rq-{{ version }}.tar.gz
   sha256: 76d2a4a27f8fd5c4cfa200cd442efe3c1fd73525c676af06f07fcc0b81bdb70d
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -20,16 +20,18 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - hatchling
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - redis-py >=4.0.0
     - click >=5.0.0
     - hatchling
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - rq
     - rq.cli
