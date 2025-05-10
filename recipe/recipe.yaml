@@ -1,6 +1,6 @@
 context:
   name: "rq"
-  version: "2.3.2"
+  version: "2.3.3"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/rq-${{ version }}.tar.gz
-  sha256: 5bd212992724428ec1689736abde783d245e7856bca39d89845884f5d580f5f1
+  sha256: 20c41c977b6f27c852a41bd855893717402bae7b8d9607dca21fe9dd55453e22
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - redis-py >=4.0.0
+    - redis-py >=4.0.0,!=6.0.0
     - click >=5.0.0
 
 tests:
