@@ -1,6 +1,6 @@
 context:
   name: "rq"
-  version: "2.4.0"
+  version: "2.4.1"
 
 package:
   name: ${{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/rq-${{ version }}.tar.gz
-  sha256: 750bab5dbb7cf1ec8a0aa2ebe8949472fa58fc121afd446c7bf5f7797f5e0655
+  sha256: 40ba01af3edacc008ab376009a3a547278d2bfe02a77cd4434adc0b01788239f
 
 build:
   number: 0
