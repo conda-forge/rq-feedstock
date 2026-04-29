@@ -1,6 +1,6 @@
 context:
   name: "rq"
-  version: "2.4.1"
+  version: "2.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/rq-${{ version }}.tar.gz
-  sha256: 40ba01af3edacc008ab376009a3a547278d2bfe02a77cd4434adc0b01788239f
+  sha256: c2156fc7249b5d43dda918c4355cfbf8d0d299a5cdd3963918e9c8daf4b1e0c0
 
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
       - rq = rq.cli:main
@@ -27,8 +27,9 @@ requirements:
     - hatchling
   run:
     - python >=${{ python_min }}
-    - redis-py >=4.0.0,!=6.0.0
+    - redis-py >=3.5.0,!=6.0.0
     - click >=5.0.0
+    - croniter
 
 tests:
   - python:
@@ -49,6 +50,11 @@ about:
   summary: RQ is a simple, lightweight, library for creating background jobs, and processing them.
   documentation: https://python-rq.org/docs/
   repository: https://github.com/rq/rq
+  description: |
+    RQ (Redis Queue) is a simple Python library for queueing jobs and 
+    processing them in the background with workers. 
+    It is backed by Redis/Valkey and is designed to have a low barrier to entry. 
+    It integrates easily with your web or application stack.
 
 extra:
   recipe-maintainers:
@@ -57,3 +63,4 @@ extra:
     - jkornblum
     - wolfv
     - MichelML
+    - rxm7706
