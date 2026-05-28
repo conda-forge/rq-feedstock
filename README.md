@@ -150,6 +150,7 @@ Feedstock Maintainers
 
 * [@MichelML](https://github.com/MichelML/)
 * [@daf](https://github.com/daf/)
+* [@janjagusch](https://github.com/janjagusch/)
 * [@jkornblum](https://github.com/jkornblum/)
 * [@kwilcox](https://github.com/kwilcox/)
 * [@wolfv](https://github.com/wolfv/)
