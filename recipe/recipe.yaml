@@ -37,7 +37,9 @@ tests:
         - rq
         - rq.cli
         - rq.contrib
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
   - script:
       - rq --help
       - rqinfo --help
